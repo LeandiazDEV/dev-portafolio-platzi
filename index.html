@@ -1,34 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Mi Primera Página Web</title>
-  <link rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <style>
+    /* Estilos CSS para personalizar la apariencia */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: #fff;
+      margin: 170px;
+    }
+    
+    .contenedor {
+      background-color: #3B3E45;
+      display: flex;
+      color: #fff;
+    }
+
+    #imagen-avatar {
+      height: 100px;
+      border-radius: 50%;
+      
+    }
+
+    #titulo {
+      color: #fff;
+      text-align: center;
+    }
+    
+    #introduccion {
+      text-align: center;
+      margin: 3%;
+    }
+
+    .cajones {
+      padding: 40px;
+      text-align: center;
+      background-color: #BDC4D9;
+    }
+
+    .cajones-con-otro-color {
+      background-color: #818EA3;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Bienvenido a mi Página Web</h1>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#acerca-de">Acerca de</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
-  <section id="inicio">
-    <h2>¡Hola Mundo!</h2>
-    <p>Bienvenido a mi primera página web. Aquí encontrarás información interesante sobre diversos temas.</p>
+  <div class="contenedor">
+    <header id="titulo" >
+      <img id="imagen-avatar" src="https://acortar.link/1ZB9eg" alt="Avatar">
+     <h1>Leandro Nicolas Díaz</h1>
+     <h3 id="introduccion">A lo largo de mi diversa experiencia laboral, he demostrado un
+      desempeño destacado en roles de liderazgo. Mi enfoque principal
+      se centra en potenciar a los equipos, identificar y aprovechar sus
+      fortalezas para lograr una mayor eficiencia. Creo firmemente en la
+      sinergia de un equipo cohesionado y comprometido, y es esta
+      mentalidad la que impulsa mi liderazgo al encabezar una visión
+      dentro de la empresa.
+      </h3>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/leandronicolasdiaz">LinkedIn</a></li>
+        <li><a href="https://twitter.com/Leandro51873934">Twitter</a></li>
+        <li><a href="https://www.instagram.com/">Instagram</a></li>
+      </ul>
+    </header>
+  </div>
+  <section class="cajones cajones-con-otro-color">
+    <h2>Sobre mí</h2>
+    <p>¡Hola! Soy [Tu Nombre] y soy [Tu Profesión o Especialidad]. En esta sección, puedes agregar una breve descripción sobre ti, tu experiencia y tus habilidades destacadas.</p>
   </section>
-  <section id="acerca-de">
-    <h2>Acerca de Mí</h2>
-    <p>Soy un apasionado del desarrollo web y me encanta aprender nuevas tecnologías. ¡Espero que disfrutes de mi página web!</p>
+
+  <section class="cajones">
+    <h2>Proyectos</h2>
+    <p>En esta sección, puedes mostrar algunos de tus proyectos destacados. Puedes incluir imágenes, descripciones y enlaces a los proyectos completos si están disponibles en línea.</p>
   </section>
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>Ponte en contacto conmigo a través de mi correo electrónico o redes sociales. ¡Estoy ansioso por escucharte!</p>
+
+  <section class="cajones cajones-con-otro-color">
+    <h2>Habilidades</h2>
+    <p>Aquí puedes enumerar tus habilidades y competencias relevantes para tu área profesional. Puedes incluir habilidades técnicas, conocimientos específicos y aptitudes que te diferencien en tu campo.</p>
   </section>
-  <footer>
-    <p>Derechos de autor &copy; 2023. Todos los derechos reservados.</p>
+
+  <section class="cajones">
+    <h2>Experiencia laboral</h2>
+    <p>En esta sección, puedes detallar tu experiencia laboral pasada, mencionando los cargos que has ocupado, las responsabilidades que has tenido y los logros destacados en cada puesto.</p>
+  </section>
+
+  <section class="cajones cajones-con-otro-color">
+    <h2>Formación académica</h2>
+    <p>Aquí puedes listar tu educación y formación académica relevante. Incluye los títulos obtenidos, las instituciones educativas y los años de estudio.</p>
+  </section>
+
+  <footer class="contenedor">
+    <p>Derechos de autor &copy; 2023 [Tu Nombre]. Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
